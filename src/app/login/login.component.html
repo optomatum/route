@@ -1,0 +1,46 @@
+<p>
+  login works!
+</p>
+<div class="container">
+
+  <div class="text-center" style="padding:50px 0">
+    <div class="row">
+      <div class="col s6 offset-l3">
+        <form class="form-horizontal" (ngSubmit)="f.form.valid && login()" #f="ngForm">
+          <fieldset>
+
+            <!-- Text input-->
+            <div class="form-group">
+              <label class="col-md-4 control-label" for="username">Usuario</label>
+              <div class="col-md-4">
+
+                <input id="username" name="username" type="text" placeholder="Usuario" pInputText
+                       class="form-control input-md" required="" [(ngModel)]="model.username">
+              </div>
+            </div>
+
+            <!-- Password input-->
+            <div class="form-group">
+              <label class="col-md-4 control-label" for="password">Password</label>
+              <div class="col-md-4">
+
+                <input id="password" name="password" type="password" placeholder="password" pPassword
+                       class="form-control input-md" required="" [(ngModel)]="model.password">
+              </div>
+            </div>
+
+            <!-- Button -->
+            <div class="form-group app-login-space">
+
+              <div class="col-md-4 col-md-offset-4">
+                <button pButton class="btn btn-default" label="Ingresar"></button>
+              </div>
+            </div>
+
+          </fieldset>
+        </form>
+      </div>
+    </div>
+  </div>
+
+</div>
