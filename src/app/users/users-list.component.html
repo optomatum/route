@@ -1,0 +1,21 @@
+<p>
+  users-list works!
+</p>
+<div class="container">
+  <div class="table-responsive">
+    <table class="table table-striped">
+      <thead>
+      <tr>
+        <th>
+          Usuario
+        </th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr *ngFor="let user of users">
+        <td>{{user.username}}</td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
