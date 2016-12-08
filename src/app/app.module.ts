@@ -15,13 +15,18 @@ import {AuthGuard} from "./share/auth-guard";
 import {AuthenticationService} from "./share/services/authentication.service";
 import {TokenService} from './share/services/token.service';
 import {MenuComponent} from './home/menu/menu.component';
+import {UsersComponent} from './users/users.component';
+import {UsersListComponent} from './users/users-list.component';
+import {userRouting} from "./users/users.router";
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     LoginComponent,
-    MenuComponent
+    MenuComponent,
+    UsersComponent,
+    UsersListComponent
   ],
   imports: [
 
@@ -30,6 +35,7 @@ import {MenuComponent} from './home/menu/menu.component';
     FormsModule,
     HttpModule,
     routing,
+
     InputTextModule,
     PasswordModule,
     ButtonModule
